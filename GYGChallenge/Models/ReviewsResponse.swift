@@ -38,7 +38,7 @@ struct AuthorInfo: Codable, Equatable {
 extension AuthorInfo {
     func photo(reviewID: Int) -> String? {
         reviewID % 2 == 0
-        ? "https://loremflickr.com/300/300?lock=\(reviewID)"
+        ? "https://picsum.photos/300/300?lock=\(reviewID)"
         : nil
     }
 }
