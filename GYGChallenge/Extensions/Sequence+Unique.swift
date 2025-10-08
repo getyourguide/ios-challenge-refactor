@@ -1,8 +1,5 @@
 //
-//  Array+Unique.swift
-//  GYGChallenge
-//
-//  Created by Joseph El Mallah on 28.10.2024.
+// Copyright © 2024 GetYourGuide. All rights reserved.
 //
 
 import Foundation

@@ -7,17 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB08F60C2CB8116D00828077 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08F60B2CB8116D00828077 /* RatingView.swift */; };
 		CB08F60E2CB8152D00828077 /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08F60D2CB8152D00828077 /* AuthorView.swift */; };
 		CB08F6102CB8197500828077 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08F60F2CB8197500828077 /* ReviewView.swift */; };
 		CB2814B52CCFA3B100539931 /* Sequence+Unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2814B42CCFA3B100539931 /* Sequence+Unique.swift */; };
 		CB47D2FD2CCF87C000FB4645 /* ReviewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47D2FC2CCF87C000FB4645 /* ReviewsListView.swift */; };
-		EDB8007326D1B05E00B1D242 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB8007226D1B05E00B1D242 /* UIView+Extensions.swift */; };
-		EDB8007B26D273A000B1D242 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB8007A26D273A000B1D242 /* UIImage+Extensions.swift */; };
-		EDBD75F026CFF318000B7C37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD75EF26CFF318000B7C37 /* AppDelegate.swift */; };
-		EDBD75F226CFF318000B7C37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD75F126CFF318000B7C37 /* SceneDelegate.swift */; };
-		EDBD75F426CFF318000B7C37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD75F326CFF318000B7C37 /* ViewController.swift */; };
-		EDBD75F726CFF319000B7C37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDBD75F526CFF319000B7C37 /* Main.storyboard */; };
+		CD897A112E969885004DAFA1 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD897A102E969884004DAFA1 /* App.swift */; };
 		EDBD75F926CFF31B000B7C37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBD75F826CFF31B000B7C37 /* Assets.xcassets */; };
 		EDBD75FC26CFF31B000B7C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDBD75FA26CFF31B000B7C37 /* LaunchScreen.storyboard */; };
 		EDBD760726CFF31C000B7C37 /* GYGChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD760626CFF31C000B7C37 /* GYGChallengeTests.swift */; };
@@ -44,18 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CB08F60B2CB8116D00828077 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		CB08F60D2CB8152D00828077 /* AuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorView.swift; sourceTree = "<group>"; };
 		CB08F60F2CB8197500828077 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		CB2814B42CCFA3B100539931 /* Sequence+Unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Unique.swift"; sourceTree = "<group>"; };
 		CB47D2FC2CCF87C000FB4645 /* ReviewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListView.swift; sourceTree = "<group>"; };
-		EDB8007226D1B05E00B1D242 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		EDB8007A26D273A000B1D242 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		CD897A0F2E9697A0004DAFA1 /* GYGChallenge.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GYGChallenge.xctestplan; sourceTree = "<group>"; };
+		CD897A102E969884004DAFA1 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		CD897A122E9698A8004DAFA1 /* NetworkClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientMock.swift; sourceTree = "<group>"; };
 		EDBD75EC26CFF318000B7C37 /* GYGChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYGChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDBD75EF26CFF318000B7C37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDBD75F126CFF318000B7C37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EDBD75F326CFF318000B7C37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EDBD75F626CFF319000B7C37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDBD75F826CFF31B000B7C37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDBD75FB26CFF31B000B7C37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDBD75FD26CFF31B000B7C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,8 +87,6 @@
 		EDB8007126D1B05300B1D242 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				EDB8007226D1B05E00B1D242 /* UIView+Extensions.swift */,
-				EDB8007A26D273A000B1D242 /* UIImage+Extensions.swift */,
 				CB2814B42CCFA3B100539931 /* Sequence+Unique.swift */,
 			);
 			path = Extensions;
@@ -107,7 +95,6 @@
 		EDB8007426D1B3F200B1D242 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CB08F60B2CB8116D00828077 /* RatingView.swift */,
 				CB08F60D2CB8152D00828077 /* AuthorView.swift */,
 				CB08F60F2CB8197500828077 /* ReviewView.swift */,
 				CB47D2FC2CCF87C000FB4645 /* ReviewsListView.swift */,
@@ -129,14 +116,6 @@
 				EDBD762226CFF751000B7C37 /* ReviewsResponse.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		EDB8007F26D27CF900B1D242 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				EDBD75F326CFF318000B7C37 /* ViewController.swift */,
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		EDBD75E326CFF318000B7C37 = {
@@ -162,14 +141,11 @@
 		EDBD75EE26CFF318000B7C37 /* GYGChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				EDB8007F26D27CF900B1D242 /* ViewControllers */,
+				CD897A102E969884004DAFA1 /* App.swift */,
 				EDB8007E26D27CE300B1D242 /* Models */,
 				EDB8007D26D27CDA00B1D242 /* Networking */,
 				EDB8007426D1B3F200B1D242 /* Views */,
 				EDB8007126D1B05300B1D242 /* Extensions */,
-				EDBD75EF26CFF318000B7C37 /* AppDelegate.swift */,
-				EDBD75F126CFF318000B7C37 /* SceneDelegate.swift */,
-				EDBD75F526CFF319000B7C37 /* Main.storyboard */,
 				EDBD75F826CFF31B000B7C37 /* Assets.xcassets */,
 				EDBD75FA26CFF31B000B7C37 /* LaunchScreen.storyboard */,
 				EDBD75FD26CFF31B000B7C37 /* Info.plist */,
@@ -180,8 +156,10 @@
 		EDBD760526CFF31C000B7C37 /* GYGChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				CD897A122E9698A8004DAFA1 /* NetworkClientMock.swift */,
 				EDBD760626CFF31C000B7C37 /* GYGChallengeTests.swift */,
 				EDBD760826CFF31C000B7C37 /* Info.plist */,
+				CD897A0F2E9697A0004DAFA1 /* GYGChallenge.xctestplan */,
 			);
 			path = GYGChallengeTests;
 			sourceTree = "<group>";
@@ -304,7 +282,6 @@
 			files = (
 				EDBD75FC26CFF31B000B7C37 /* LaunchScreen.storyboard in Resources */,
 				EDBD75F926CFF31B000B7C37 /* Assets.xcassets in Resources */,
-				EDBD75F726CFF319000B7C37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,17 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB08F60C2CB8116D00828077 /* RatingView.swift in Sources */,
-				EDBD75F426CFF318000B7C37 /* ViewController.swift in Sources */,
-				EDBD75F026CFF318000B7C37 /* AppDelegate.swift in Sources */,
 				CB08F6102CB8197500828077 /* ReviewView.swift in Sources */,
 				EDBD762326CFF751000B7C37 /* ReviewsResponse.swift in Sources */,
-				EDBD75F226CFF318000B7C37 /* SceneDelegate.swift in Sources */,
 				CB2814B52CCFA3B100539931 /* Sequence+Unique.swift in Sources */,
-				EDB8007326D1B05E00B1D242 /* UIView+Extensions.swift in Sources */,
 				CB47D2FD2CCF87C000FB4645 /* ReviewsListView.swift in Sources */,
-				EDB8007B26D273A000B1D242 /* UIImage+Extensions.swift in Sources */,
 				CB08F60E2CB8152D00828077 /* AuthorView.swift in Sources */,
+				CD897A112E969885004DAFA1 /* App.swift in Sources */,
 				EDBD762026CFF327000B7C37 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,14 +348,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EDBD75F526CFF319000B7C37 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDBD75F626CFF319000B7C37 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EDBD75FA26CFF31B000B7C37 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -559,7 +523,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6U58DBP3W;
 				INFOPLIST_FILE = GYGChallengeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -581,7 +545,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6U58DBP3W;
 				INFOPLIST_FILE = GYGChallengeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

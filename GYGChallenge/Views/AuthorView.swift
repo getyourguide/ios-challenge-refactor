@@ -9,7 +9,18 @@ struct AuthorView: View {
     let reviewID: Int
 
     private let reviewLabel: String
-    private let authorImage: UIImage?
+    private let photoURL: URL?
+
+    private var authorImage: UIImage? {
+        if
+            let photo = authorInfo?.photo(reviewID: reviewID),
+            let data = try? Data(contentsOf: URL(string: photo)!)
+        {
+            UIImage(data: data)
+        } else {
+            nil
+        }
+    }
 
     init(authorInfo: AuthorInfo?, reviewID: Int) {
         self.authorInfo = authorInfo
@@ -21,14 +32,8 @@ struct AuthorView: View {
         }
         self.reviewLabel = reviewedByContentText
 
-        if
-            let photo = authorInfo?.photo(reviewID: reviewID),
-            let data = try? Data(contentsOf: URL(string: photo)!)
-        {
-            self.authorImage = UIImage(data: data)
-        } else {
-            self.authorImage = nil
-        }
+        let photo = authorInfo?.photo(reviewID: reviewID)
+        self.photoURL = photo.map(URL.init) ?? nil
     }
 
     var body: some View {
@@ -48,21 +53,4 @@ struct AuthorView: View {
             }
         }
     }
-}
-
-#Preview {
-    AuthorView(
-        authorInfo: .init(
-            fullName: "Max Mustermann",
-            country: "Germany"
-        ),
-        reviewID: 1
-    )
-    AuthorView(
-        authorInfo: .init(
-            fullName: "John Doe",
-            country: "United Kingdom"
-        ),
-        reviewID: 2
-    )
 }

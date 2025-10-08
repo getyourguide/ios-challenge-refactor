@@ -1,3 +1,4 @@
+
 //
 // Copyright © 2024 GetYourGuide. All rights reserved.
 //
@@ -28,12 +29,16 @@ protocol NetworkClientProtocol {
         _ request: URLRequest,
         completion: @escaping (Result<ResponseBody, NetworkError>) -> Void
     ) -> NetworkTask
+
+    func run<ResponseBody: Decodable>(
+        _ request: URLRequest
+    ) async -> Result<ResponseBody, NetworkError>
 }
 
 protocol URLSessionProtocol {
     func dataTask(
         with request: URLRequest,
-        completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void
+        completionHandler: @Sendable @escaping (Data?, URLResponse?, Error?) -> Void
     ) -> URLSessionDataTask
 }
 
@@ -48,6 +53,7 @@ class NetworkClient: NetworkClientProtocol {
         _ request: URLRequest,
         completion: @escaping (Result<ResponseBody, NetworkError>) -> Void
     ) -> NetworkTask {
+        // NB: Debugging purpose only
         print("\nHTTP Request: \(request.debugDescription)")
 
         let task = urlSession.dataTask(with: request) { (data, response, error) in
@@ -60,6 +66,7 @@ class NetworkClient: NetworkClientProtocol {
 
             do {
                 if let data = data {
+                    // NB: Debugging purpose only
                     data.prettyPrintedJSONString.map {
                         print("\nHTTP Response: \($0)")
                     }
@@ -79,9 +86,18 @@ class NetworkClient: NetworkClientProtocol {
 
         return task
     }
+
+    func run<ResponseBody>(_ request: URLRequest) async -> Result<ResponseBody, NetworkError> where ResponseBody : Decodable {
+        await withCheckedContinuation { continuation in
+            run(request) { (result: Result<ResponseBody, NetworkError>) in
+                continuation.resume(returning: result)
+            }
+        }
+    }
 }
 
 private extension Data {
+    /// Helper property for debugging purpose only
     var prettyPrintedJSONString: String? {
         guard
             let jsonObject = try? JSONSerialization.jsonObject(with: self, options: []) as? [String: Any],
