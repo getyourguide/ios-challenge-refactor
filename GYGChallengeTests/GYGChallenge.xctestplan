@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "66A71A82-EF8A-4D1B-BE51-30B1F3A1790A",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:GYGChallenge.xcodeproj",
+      "identifier" : "EDBD75EB26CFF318000B7C37",
+      "name" : "GYGChallenge"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:GYGChallenge.xcodeproj",
+        "identifier" : "EDBD760126CFF31B000B7C37",
+        "name" : "GYGChallengeTests"
+      }
+    }
+  ],
+  "version" : 1
+}

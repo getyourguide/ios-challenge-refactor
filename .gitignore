@@ -1,0 +1,11 @@
+.DS_Store
+xcuserdata/
+Builds
+*.xcuserdatad
+.idea
+timeline.xctimeline
+
+### Xcode ###
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
