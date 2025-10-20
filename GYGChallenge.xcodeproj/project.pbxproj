@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		CB08F60E2CB8152D00828077 /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08F60D2CB8152D00828077 /* AuthorView.swift */; };
 		CB08F6102CB8197500828077 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08F60F2CB8197500828077 /* ReviewView.swift */; };
-		CB2814B52CCFA3B100539931 /* Sequence+Unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2814B42CCFA3B100539931 /* Sequence+Unique.swift */; };
 		CB47D2FD2CCF87C000FB4645 /* ReviewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47D2FC2CCF87C000FB4645 /* ReviewsListView.swift */; };
+		CBA10BE12EA680C20034C939 /* NetworkClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD897A122E9698A8004DAFA1 /* NetworkClientMock.swift */; };
 		CD897A112E969885004DAFA1 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD897A102E969884004DAFA1 /* App.swift */; };
 		EDBD75F926CFF31B000B7C37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBD75F826CFF31B000B7C37 /* Assets.xcassets */; };
 		EDBD75FC26CFF31B000B7C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDBD75FA26CFF31B000B7C37 /* LaunchScreen.storyboard */; };
@@ -40,7 +40,6 @@
 /* Begin PBXFileReference section */
 		CB08F60D2CB8152D00828077 /* AuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorView.swift; sourceTree = "<group>"; };
 		CB08F60F2CB8197500828077 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
-		CB2814B42CCFA3B100539931 /* Sequence+Unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Unique.swift"; sourceTree = "<group>"; };
 		CB47D2FC2CCF87C000FB4645 /* ReviewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListView.swift; sourceTree = "<group>"; };
 		CD897A0F2E9697A0004DAFA1 /* GYGChallenge.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GYGChallenge.xctestplan; sourceTree = "<group>"; };
 		CD897A102E969884004DAFA1 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -84,14 +83,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EDB8007126D1B05300B1D242 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				CB2814B42CCFA3B100539931 /* Sequence+Unique.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		EDB8007426D1B3F200B1D242 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,7 +136,6 @@
 				EDB8007E26D27CE300B1D242 /* Models */,
 				EDB8007D26D27CDA00B1D242 /* Networking */,
 				EDB8007426D1B3F200B1D242 /* Views */,
-				EDB8007126D1B05300B1D242 /* Extensions */,
 				EDBD75F826CFF31B000B7C37 /* Assets.xcassets */,
 				EDBD75FA26CFF31B000B7C37 /* LaunchScreen.storyboard */,
 				EDBD75FD26CFF31B000B7C37 /* Info.plist */,
@@ -308,7 +298,6 @@
 			files = (
 				CB08F6102CB8197500828077 /* ReviewView.swift in Sources */,
 				EDBD762326CFF751000B7C37 /* ReviewsResponse.swift in Sources */,
-				CB2814B52CCFA3B100539931 /* Sequence+Unique.swift in Sources */,
 				CB47D2FD2CCF87C000FB4645 /* ReviewsListView.swift in Sources */,
 				CB08F60E2CB8152D00828077 /* AuthorView.swift in Sources */,
 				CD897A112E969885004DAFA1 /* App.swift in Sources */,
@@ -320,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA10BE12EA680C20034C939 /* NetworkClientMock.swift in Sources */,
 				EDBD760726CFF31C000B7C37 /* GYGChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

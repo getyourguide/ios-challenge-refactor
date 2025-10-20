@@ -32,12 +32,9 @@ public struct ReviewsListView: View {
         _ = networkClient.run(
             URLRequest(url: url)
         ) { (result: Result<ReviewsResponse, NetworkError>) in
-            self.reviews.removeAll()
             switch result {
             case let.success(response):
                 self.reviews.append(contentsOf: response.reviews)
-                // Due to a bug in the API, duplicated reviews can be returned.
-                self.reviews = self.reviews.uniqued()
             case let .failure(error):
                 print(error)
             }
