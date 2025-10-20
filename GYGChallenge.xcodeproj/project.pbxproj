@@ -10,6 +10,7 @@
 		CB08F60E2CB8152D00828077 /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08F60D2CB8152D00828077 /* AuthorView.swift */; };
 		CB08F6102CB8197500828077 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08F60F2CB8197500828077 /* ReviewView.swift */; };
 		CB47D2FD2CCF87C000FB4645 /* ReviewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47D2FC2CCF87C000FB4645 /* ReviewsListView.swift */; };
+		CBA10BE12EA680C20034C939 /* NetworkClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD897A122E9698A8004DAFA1 /* NetworkClientMock.swift */; };
 		CD897A112E969885004DAFA1 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD897A102E969884004DAFA1 /* App.swift */; };
 		EDBD75F926CFF31B000B7C37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBD75F826CFF31B000B7C37 /* Assets.xcassets */; };
 		EDBD75FC26CFF31B000B7C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDBD75FA26CFF31B000B7C37 /* LaunchScreen.storyboard */; };
@@ -308,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA10BE12EA680C20034C939 /* NetworkClientMock.swift in Sources */,
 				EDBD760726CFF31C000B7C37 /* GYGChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
